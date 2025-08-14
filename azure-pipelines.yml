@@ -5,13 +5,9 @@
 
 trigger:
 - master
+- main
+- Release
 
-pr:
-  branches:
-    include:
-      - master
-      - develop
-      - LinuxScripts
 pool:
   vmImage: ubuntu-latest
 
