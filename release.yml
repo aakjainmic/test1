@@ -5,8 +5,10 @@ resources:
   - pipeline: test2
     source: test2
     trigger:
-      tags:
-      - R1.0.0
+      branches:
+        include:
+        - refs/tags/R1.0.0
+        - R1.0.0
 
 steps:
 - script: |
