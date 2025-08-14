@@ -1,5 +1,11 @@
 resources:
   pipelines:
-  - pipeline: 
+  - pipeline: test2
+    source: test2
     tags:
     - R1.0.0
+    trigger: true 
+
+steps:
+- script: |
+    echo $(resources.pipeline.myresourcevars.pipelineID)
