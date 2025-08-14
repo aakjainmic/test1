@@ -1,15 +1,14 @@
-trigger: none
-
-resources:
-  pipelines:
-  - pipeline: test2
-    source: test2
-    trigger:
+trigger:
       branches:
         include:
          - refs/tags/R1.0.0
         exclude:
          - '*'
+resources:
+  pipelines:
+  - pipeline: test2
+    source: test2
+
 
 steps:
 - script: |
