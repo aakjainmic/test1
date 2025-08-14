@@ -27,3 +27,4 @@ steps:
     npm run package-build
   displayName: 'npm install and build'
   workingDirectory: tasks/Node
+
