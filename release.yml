@@ -1,13 +1,13 @@
-trigger:
-      branches:
-        include:
-         - refs/tags/R1.0.0
-        exclude:
-         - '*'
+trigger: none # Disable CI triggers for this pipeline
+
 resources:
   pipelines:
-  - pipeline: test2
-    source: test2
+    - pipeline: ciPipeline
+      source: test2 # Replace with your CI pipeline name
+      trigger:
+        branches:
+          include:
+            - refs/tags/R1.0.0
 
 
 steps:
