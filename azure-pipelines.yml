@@ -4,12 +4,14 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
-- main
-- Release
-
-tags:
-- R1.0.0
+  branches:
+    include:
+    - master
+    - main
+    - Release
+  tags:
+    include:
+    - R1.0.0
 
 pool:
   vmImage: ubuntu-latest
