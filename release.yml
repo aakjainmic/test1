@@ -2,9 +2,9 @@ resources:
   pipelines:
   - pipeline: test2
     source: test2
-    tags:
-    - R1.0.0
-    trigger: true 
+    trigger:
+      tags:
+      - R1.0.0
 
 steps:
 - script: |
