@@ -5,9 +5,8 @@ resources:
     - pipeline: ciPipeline
       source: test2 # Replace with your CI pipeline name
       trigger:
-        branches:
-          include:
-            - refs/tags/R1.0.0
+        tags:
+            - R1.0.0
 
 
 steps:
